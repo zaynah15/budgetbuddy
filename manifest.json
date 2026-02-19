@@ -2,7 +2,9 @@
   "name": "BudgetBuddy - Multi-User Spending Tracker",
   "short_name": "BudgetBuddy",
   "description": "Personal budget tracker with Google Sign-In, cloud sync, dark mode, SMS parsing, and daily reminders 🌸",
-  "start_url": "/",
+"start_url": "/budgetbuddy/",
+
+
   "display": "standalone",
   "background_color": "#FFF8F2",
   "theme_color": "#FFB6C1",
@@ -34,7 +36,7 @@
   "categories": ["finance", "productivity", "lifestyle"],
   "lang": "en-IN",
   "dir": "ltr",
-  "scope": "/",
+  "scope": "/budgetbuddy/",
   "prefer_related_applications": false,
   "related_applications": []
 }
