@@ -36,7 +36,7 @@
   "categories": ["finance", "productivity", "lifestyle"],
   "lang": "en-IN",
   "dir": "ltr",
-  "scope": "/budgetbuddy/",
+  "scope": "/Spendora/",
   "prefer_related_applications": false,
   "related_applications": []
 }
