@@ -1,7 +1,7 @@
 {
-  "name": "BudgetBuddy - Multi-User Spending Tracker",
-  "short_name": "BudgetBuddy",
-  "description": "Personal budget tracker with Google Sign-In, cloud sync, dark mode, SMS parsing, and daily reminders 🌸",
+  "name": "Spendora - Your Wallet’s Glow-Up 💅",
+"short_name": "Spendora",
+"description": "Personal budget tracker with calender sync, SMS parsing, and daily reminders 🌸",
 "start_url": "/budgetbuddy/",
 
 
