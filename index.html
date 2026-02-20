@@ -1327,15 +1327,7 @@ function SetupScreen({ budgets, onChange, onSave, isDark }) {
   );
 }
 
-function ScoreBadge({ score }) {
-  const level = score >= 80 
-    ? {label:"Champion 🏆", color:"#6fd4a8"}
-    : score >= 60 
-      ? {label:"On Track 🌟", color:"#b5d8ff"}
-      : score >= 40 
-        ? {label:"Careful 🌿", color:"#ffd6ba"}
-        : {label:"Danger Zone 🔥", color:"#ff6b6b"};
-  
+
   return (
     <div style={{
       display:"flex",
