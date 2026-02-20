@@ -1,0 +1,33 @@
+{
+  "name": "Spendora - Your Wallet's Glow-Up",
+  "short_name": "Spendora",
+  "description": "Your Wallet's Glow-Up 💅 - Personal budget tracker with smart notifications and cloud sync",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FFF8F2",
+  "theme_color": "#FFB6C1",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./logo.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "share_target": {
+    "action": "./",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "categories": ["finance", "productivity", "lifestyle"],
+  "lang": "en-IN",
+  "dir": "ltr",
+  "prefer_related_applications": false
+}
