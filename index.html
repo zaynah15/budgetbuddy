@@ -1714,10 +1714,7 @@ function BudgetBuddy() {
       ],
     };
 
-    let sc = state.disciplineScore;
-    if (newSpent > budget) sc = Math.max(0, sc - 10);
-    else if (remaining < 300) sc = Math.max(0, sc - 3);
-    newState.disciplineScore = sc;
+  
 
     setState(newState);
     setAmount("");
