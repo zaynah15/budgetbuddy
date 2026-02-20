@@ -1726,7 +1726,25 @@ function BudgetBuddy() {
     // Feedback
     if (newSpent > budget) {
       if (navigator.vibrate) navigator.vibrate([200, 100, 200, 100, 400]);
-      setTimeout(() => setGlutton(catKey), 150);
+      if (newSpent > budget) {
+  if (navigator.vibrate) navigator.vibrate([200, 100, 200, 100, 400]);
+
+  const totalSpentNow = Object.values(newState.spent).reduce((a,b)=>a+b,0);
+  const totalBudgetNow = Object.values(newState.budgets).reduce((a,b)=>a+b,0);
+  const projectedLoss = Math.max(0, totalSpentNow - totalBudgetNow);
+
+  showToast(
+    `+₹${newSpent - budget} overspent 😡 
+    This way you won’t be able to save ₹${projectedLoss} by the end of this month.
+    Come on, you’re better than this!!`,
+    "error"
+  );
+
+  setTimeout(() => setGlutton(catKey), 150);
+}
+
+
+      
     } else if (remaining <= 300) {
       if (navigator.vibrate) navigator.vibrate([150, 100, 150]);
       showToast(`⚠️ Only ₹${Math.max(0, remaining)} left in ${CATS[catKey].label}!`, "warn");
