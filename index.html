@@ -510,9 +510,25 @@ function TimezoneSetup({ onComplete, isDark }) {
             display:"block", fontFamily:"'Nunito',sans-serif",
             fontSize:12, fontWeight:800, color: "var(--text-secondary)",
             marginBottom:8, textTransform:"uppercase", letterSpacing:0.5,
+     
           }}>Country</label>
-          <input type="text" placeholder="e.g., India" value={country}
-            onChange={e => setCountry(e.target.value)}
+         
+    <select value={country} onChange={e => setCountry(e.target.value)}
+  style={{...styles}}>
+  <option value="">Select your country...</option>
+  <option value="India">🇮🇳 India</option>
+  <option value="United States">🇺🇸 United States</option>
+  <option value="United Kingdom">🇬🇧 United Kingdom</option>
+  <option value="Canada">🇨🇦 Canada</option>
+  <option value="Australia">🇦🇺 Australia</option>
+  <option value="Singapore">🇸🇬 Singapore</option>
+  <option value="UAE">🇦🇪 UAE</option>
+  <option value="Saudi Arabia">🇸🇦 Saudi Arabia</option>
+  <option value="Pakistan">🇵🇰 Pakistan</option>
+  <option value="Bangladesh">🇧🇩 Bangladesh</option>
+  <option value="Other">🌍 Other</option>
+</select>
+           
             style={{
               width:"100%", border: `2px solid var(--border-color)`,
               borderRadius:14, padding:"12px 16px",
